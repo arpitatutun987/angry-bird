@@ -21,10 +21,11 @@ class Base {
         var angle = this.body.angle;
 
         push();
+        fill("yellow");
         translate(pos.x,pos.y);
         rotate(angle);
         rectMode(CENTER);
-        rect(pos.x,pos.y,this.w,this.h);
+        rect(0,0,this.w,this.h);
         pop();
         
     }

@@ -13,6 +13,14 @@ function setup(){
 
     ground = new Ground(600,790,1200,20);
 
+    box1 = new Box(800,740);
+    box2 = new Box(1000,740);
+
+    pig1 = new Pig (900,740);
+
+    bird = new Bird(200,200);
+
+
    
 }
 
@@ -23,6 +31,10 @@ function draw(){
     Engine.update(myEngine);
 
     ground.display();
+    box1.display();
+    box2.display();
+    pig1.display();
+    bird.display();
 
 
 }
