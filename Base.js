@@ -12,6 +12,7 @@ class Base {
         this.body = Bodies.rectangle(x,y,w,h,options);
         this.w = w;
         this.h = h;
+        this.image = loadImage("base.png");
         World.add(myWorld,this.body);
     }
 
@@ -21,10 +22,11 @@ class Base {
         var angle = this.body.angle;
 
         push();
+        
         translate(pos.x,pos.y);
         rotate(angle);
-        rectMode(CENTER);
-        rect(pos.x,pos.y,this.w,this.h);
+       imageMode(CENTER);
+       image(this.image,0,0,this.w,this.h);
         pop();
         
     }
